@@ -4,7 +4,7 @@ function renderThings(list) {
   const template = $('#thingsToDoTemplate').html;
   const container = $('.things');
   list.forEach(item => {
-    let newItemHTML = Mustache.render(item, template)
+    let newItemHTML = Mustache.render(item,template)
     container.append(newItemHTML);
   });
 }
